@@ -1,0 +1,83 @@
+/* home */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--main-color);
+    color: #fff;
+  }
+  .home img{
+    width: 15%;
+    border-radius: 50%;
+    margin-top: 7%;
+    border: 7px solid #fff;
+    object-fit: cover;
+    object-position: center;
+  }
+  @media screen and (max-width:992px){
+   .home img{
+    width: 20%;
+   }
+  }
+  @media screen and (max-width:767px){
+   .home img{
+    width: 27%;
+   }
+  }
+  @media screen and (max-width:575px){
+   .home img{
+    width: 32%;
+   }
+  }
+  .home h1{
+    position: relative;
+    font-size: 60px;
+    line-height: 1.7;
+    font-weight: 700;
+  }
+  .home i{
+    font-size: 40px;
+  }
+  .home h1::before{
+    content: "";
+    position: absolute;
+    bottom: -30%;
+    left: 18%;
+    width: 25%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 3px;
+  }
+  .home h1::after{
+    content: "";
+    position: absolute;
+    bottom: -30%;
+    right: 18%;
+    width: 25%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 3px;
+  }
+  @media screen and (max-width:600px){
+    .home h1{
+     font-size: 50px;
+    }
+   }
+  @media screen and (max-width:499px){
+    .home h1{
+     font-size: 40px;
+    }
+    .home h1::before{
+      bottom: -45%;
+      left: 13%;
+    }
+    .home h1::after{
+      bottom: -45%;
+      right: 13%;
+    }
+   }
+  .home h6{
+    font-size: 25px;
+    margin-top: 20px;
+  }
