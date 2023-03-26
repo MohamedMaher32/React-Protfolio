@@ -14,7 +14,8 @@ export default class App extends Component {
           {path:"home",element:<Home/>},
           {path:"protfolio",element:<Protfolio/>},
           {path:"about",element:<About/>},
-          {path:"contact",element:<Contact/>}
+          {path:"contact",element:<Contact/>},
+          {path:"*",element:<Home/>},
         ]},
         
     ])
